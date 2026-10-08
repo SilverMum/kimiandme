@@ -394,3 +394,146 @@
         justify-content: center;
     }
 }
+
+/* =========================================
+   FACEBOOK CARD — REFERENCE IMAGE DESIGN
+========================================= */
+
+.facebook-card {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px 18px 15px;
+
+    background: #f3eee6;
+    border: 1.5px solid #d8cfc0;
+    border-radius: 10px;
+
+    color: #17233d;
+    text-align: left;
+    box-shadow: none;
+}
+
+/* Logo and heading */
+.facebook-card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+/* Blue Facebook circle */
+.facebook-logo {
+    flex: 0 0 58px;
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #2360a2;
+    color: #ffffff;
+
+    border: 2px solid #ffffff;
+    outline: 1px solid #d8cfc0;
+    border-radius: 50%;
+
+    font-family: Arial, sans-serif;
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 1;
+    padding-top: 8px;
+    box-sizing: border-box;
+}
+
+/* Heading text */
+.facebook-card .facebook-card-heading h3 {
+    margin: 0;
+    padding: 0;
+
+    color: #17233d;
+    font-family: Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 900;
+    line-height: 1.15;
+    letter-spacing: 0.3px;
+    text-align: left;
+}
+
+.facebook-card-heading h3 span {
+    display: block;
+    white-space: nowrap;
+}
+
+/* Description */
+.facebook-card p {
+    margin: 14px 0 15px;
+    padding: 0;
+
+    color: #252525;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Join our group button */
+.facebook-card .facebook-join-btn {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    padding: 10px 8px;
+
+    background: transparent;
+    border: 2px solid #566078;
+    border-radius: 4px;
+
+    color: #17233d;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+/* External-link symbol */
+.facebook-external-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 15px;
+    height: 15px;
+
+    border: 1.5px solid currentColor;
+    border-radius: 2px;
+
+    font-size: 13px;
+    line-height: 1;
+}
+
+/* Hover effect */
+.facebook-card .facebook-join-btn:hover {
+    background: #17233d;
+    color: #ffffff;
+}
+
+/* Mobile adjustment */
+@media (max-width: 600px) {
+    .facebook-card {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
