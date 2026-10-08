@@ -537,3 +537,13 @@
         margin-right: auto;
     }
 }
+
+/* Remove the white gap above the footer */
+.home main {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.home .site-footer {
+    margin-top: 0;
+}
