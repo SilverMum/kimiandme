@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------
+   FOOTER — DARK THEME (GLOBAL)
+--------------------------------*/
+.site-footer {
+    background-color: #1a1a1a;   /* dark footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 10px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;              /* NEW */
+    border: 0;              /* NEW */
+    position: relative;     /* NEW */
+    left: 0;                /* NEW */
+    right: 0;               /* NEW */
+    bottom: 0;              /* NEW */
+}
+
+.site-footer p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* HOMEPAGE ONLY — allow full-width layout */
+body.home main {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#club-events {
+    scroll-margin-top: 92px; /* was 80px */
+}
