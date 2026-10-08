@@ -1,0 +1,721 @@
+/* ------------------------------
+   KITCHEN PAGE TITLE
+--------------------------------*/
+#kitchen-page .section-title {
+    font-size: 3.2rem;
+    color: #000;
+    text-decoration: underline;
+    font-weight: 800;
+    margin-top: 25px; /* final chosen spacing */
+}
+
+/* Kitchen Title Image */
+.kitchen-title-img {
+    max-width: 50%;
+    margin: 45px auto 45px auto;
+    display: block;
+}
+
+/* ------------------------------
+   KITCHEN PAGE SPACING
+--------------------------------*/
+#kitchen-page {
+    margin-top: 200px;
+}
+
+/* ------------------------------
+   KITCHEN PAGE — DESKTOP LAYOUT
+--------------------------------*/
+#kitchen-page .kitchen-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+
+#kitchen-page .kitchen-badge {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#kitchen-page .kitchen-description {
+    flex: 1;
+    min-width: 260px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* ------------------------------
+   FACEBOOK EMBED BOX
+--------------------------------*/
+.fb-page-container {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 10px;
+    border: 3px solid red;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.fb-page {
+    width: 100% !important;
+    height: 800px !important;
+    overflow-y: scroll;
+}
+
+/* ------------------------------
+   KITCHEN FACEBOOK FEED CARD
+--------------------------------*/
+.kitchen-fb-scroll {
+    max-height: 800px;
+    overflow-y: auto;
+    padding-right: 12px;
+    margin-top: 20px;
+}
+
+/* Scrollbar styling */
+.kitchen-fb-scroll::-webkit-scrollbar {
+    width: 10px;
+}
+
+.kitchen-fb-scroll::-webkit-scrollbar-track {
+    background: rgba(255, 236, 220, 0.55);
+    border-radius: 10px;
+}
+
+.kitchen-fb-scroll::-webkit-scrollbar-thumb {
+    background: rgba(90, 45, 20, 0.55);
+    border-radius: 10px;
+}
+
+.kitchen-feed-title {
+    margin: 0 0 10px 0;
+    font-size: 1.6rem;
+    color: #5a2d14;
+}
+
+/* =========================================================
+   KITCHEN PAGE — FACEBOOK BUTTON
+========================================================= */
+
+#kitchen-page {
+    position: relative; /* allows absolute positioning inside */
+}
+
+.kitchen-fb-button {
+    position: absolute;
+    left: 370px;
+    top: 270px;
+    z-index: 50;
+}
+
+.kitchen-fb-button img {
+    width: 180px;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.25s ease;
+
+    /* override global centering rules */
+    margin: 0 !important;
+}
+
+.kitchen-fb-button img:hover {
+    transform: translateY(-4px);
+    filter: brightness(1.15);
+}
+
+/* ------------------------------
+   KITCHEN PAGE BACKGROUND
+--------------------------------*/
+
+.kitchen-bg {
+    background-image: url('../images/robnsonsbg1.png');
+    background-size: cover;          /* full width, fills horizontally */
+    background-repeat: no-repeat;
+    background-position: top center; /* starts right under nav */
+    background-attachment: scroll;   /* scrolls normally */
+
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------
+   KITCHEN — DOUBLE CARD STYLE
+--------------------------------*/
+.home-kitchen-card.outer-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+}
+
+.home-kitchen-card .inner-card {
+    background: rgba(255, 236, 220, 0.55);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow:
+        0 4px 14px rgba(90, 45, 20, 0.45),
+        0 8px 28px rgba(90, 45, 20, 0.35);
+}
+
+/* Layout inside card */
+.home-kitchen-card .kitchen-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.home-kitchen-card .kitchen-badge {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.home-kitchen-card .kitchen-description {
+    max-width: 450px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ------------------------------
+   MOBILE FIXES
+--------------------------------*/
+@media (max-width: 768px) {
+    #kitchen-page .kitchen-layout {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    #kitchen-page .kitchen-badge {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    #kitchen-page .kitchen-description {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .home-kitchen-card .kitchen-layout {
+        flex-direction: column;
+    }
+
+    .home-kitchen-card .kitchen-badge {
+        margin-bottom: 20px;
+    }
+}
+
+.kitchen-layout {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .kitchen-description {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .kitchen-description {
+        text-align: center;
+        max-width: 100%;
+    }
+
+/* =========================================================
+   KITCHEN PAGE — BASE STYLES (NOT MOBILE-ONLY)
+========================================================= */
+
+.kitchen-title-img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 110px auto 0;
+}
+
+.kitchen-description p {
+    font-size: 0.95rem;
+    line-height: 1.35;
+    padding: 0 10px;
+    word-break: break-word;
+}
+
+.kitchen-fb-scroll iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto;
+}
+
+/* =========================================================
+   MOBILE-ONLY — KITCHEN PAGE
+========================================================= */
+
+@media (max-width: 900px) {
+    .kitchen-description p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .kitchen-description {
+        margin-left: -17px;
+    }
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-spacer {
+    display: none;
+}
+
+.logo img {
+    height: 110px;
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    padding: 10px 14px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.nav-links > li > a:hover {
+    background-color: #333 !important;
+    color: #fff !important;
+    transform: translateY(-2px);
+}
+
+.submenu-toggle {
+    color: #fff !important;
+}
+
+/* Trap & Skeet two-line item */
+.nav-trap-skeet a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 14px;
+    line-height: 1.1;
+    display: inline-block;
+    text-align: left !important;
+}
+
+.nav-trap-skeet a span {
+    font-size: 0.85em;
+    font-weight: 600;
+    display: block;
+    color: #fff;
+}
+
+/* Dropdown menus */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    padding: 8px 0;
+    list-style: none;
+    background-color: #1a1a1a !important;
+    border: none !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 2100;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 18px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff !important;
+    white-space: normal;
+}
+
+.dropdown-menu a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Right-side submenu */
+.dropdown-sub {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.submenu-right {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 200px;
+    padding: 8px 0;
+    background-color: #1a1a1a !important;
+    border: none !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 2200;
+}
+
+.dropdown-sub:hover > .submenu-right {
+    display: block;
+}
+
+.submenu-right a {
+    padding: 10px 18px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff !important;
+}
+
+/* =========================================================
+   1. MOBILE NAV — ALIGNMENT + TOGGLE BEHAVIOR
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* Disable hover behavior on mobile */
+    .dropdown:hover > .dropdown-menu {
+        display: none !important;
+    }
+
+    /* Normalize dropdown anchor width */
+    .nav-links li.dropdown {
+        width: auto !important;
+    }
+
+    .nav-links li.dropdown > a {
+        display: inline-block !important;
+    }
+
+    /* Left-align dropdowns */
+    .nav-links li.dropdown > .dropdown-menu {
+        left: 0 !important;
+        transform: translateX(0) !important;
+    }
+
+    /* JS-controlled open state */
+    .nav-links li.dropdown > .dropdown-menu.open {
+        display: block !important;
+    }
+}
+
+/* =========================================================
+   2. MOBILE LABEL FIX — TRAP & SKEET
+   ========================================================= */
+@media (max-width: 768px) {
+
+    .nav-links > li > a[href="trap-skeet.html"] {
+        font-size: 0 !important;
+        position: relative;
+    }
+
+    .nav-links > li > a[href="trap-skeet.html"]::after {
+        content: "Trap & Skeet";
+        font-size: 16px;
+        color: inherit;
+    }
+}
+
+/* =========================================================
+   3. MOBILE NAV — WRAPPED LAYOUT + TAP-TO-OPEN DROPDOWNS
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* NAV CONTAINER */
+    .main-nav {
+        justify-content: center !important;
+        padding: 12px 0 !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        order: 1;
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo img {
+        height: 90px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .nav-spacer {
+        display: none;
+    }
+
+    /* WRAPPED NAV — 3 OVER 3 */
+    .nav-links {
+        order: 2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px 6px;
+        width: 100%;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .nav-links li {
+        flex: 0 0 calc(33.33% - 6px);
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 1.3rem;
+        padding: 4px 2px;
+        white-space: nowrap;
+    }
+
+    /* HOMEPAGE-SPECIFIC SPACING */
+    .home .nav-links {
+        gap: 4px 6px !important;
+    }
+
+    .home .nav-links li {
+        flex: 0 0 calc(33.33% - 4px) !important;
+    }
+
+    .home .nav-links a {
+        font-size: 1.3rem !important;
+        padding: 2px 0 !important;
+        font-weight: bold;
+    }
+
+    .home .main-nav {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 auto !important;
+    }
+
+    /* MOBILE DROPDOWN OVERLAY */
+    .dropdown-menu,
+    .submenu-right {
+        display: none;
+        position: absolute !important;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90% !important;
+        margin-top: 6px;
+        padding: 10px 0;
+        border: 1px solid #ddd;
+        background: white;
+        z-index: 9999;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    /* HOMEPAGE DROPDOWN TEXT SIZE */
+    .home .dropdown-menu a,
+    .home .submenu-right a {
+        font-size: 1.3rem !important;
+    }
+
+    /* HOMEPAGE DROPDOWN WIDTH */
+    .home .dropdown-menu,
+    .home .submenu-right {
+        max-width: 360px !important;
+    }
+
+    /* MEMBERS SUBMENU — MOBILE RIGHT OPEN */
+    .dropdown-sub {
+        position: relative;
+    }
+
+    .submenu-toggle {
+        display: inline-block !important;
+        vertical-align: middle !important;
+        margin-left: 6px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .dropdown-sub .submenu-right {
+        top: 0 !important;
+        left: 100% !important;
+        transform: none !important;
+        width: auto !important;
+        max-width: 240px !important;
+    }
+
+    .dropdown-sub.open > .submenu-right {
+        display: block;
+    }
+
+    .dropdown.open > .dropdown-menu {
+        display: block;
+    }
+
+    /* HOMEPAGE — KEEP MEMBERS + ARROW INLINE */
+    .home .dropdown-sub {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        white-space: nowrap !important;
+    }
+
+    .home .submenu-link {
+        display: inline-block !important;
+    }
+
+    .home .submenu-toggle {
+        display: inline-block !important;
+        margin-left: 6px !important;
+        vertical-align: middle !important;
+    }
+}
+
+/* =========================================================
+   MOBILE NAV — EXTRA RULES NEEDED FOR DROPDOWN VISIBILITY
+   (These were NOT in the unified block yet)
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* Ensure nav stays above all dropdowns + content */
+    .main-nav {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999 !important;
+    }
+
+    header {
+        position: relative;
+        z-index: 9998;
+    }
+
+    /* WRAPPED NAV — 3 OVER 3 (structure only, no conflicts) */
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px 6px;
+        width: 100%;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .nav-links li {
+        flex: 0 0 calc(33.33% - 6px);
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 1.3rem;
+        padding: 4px 2px;
+        white-space: nowrap;
+    }
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* MOBILE-ONLY BACKGROUND FOR KITCHEN PAGE */
+@media (max-width: 900px) {
+    .kitchen-bg {
+        background-image: url('../images/robnsonsphonebg.png') !important;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 900px) {
+    .kitchen-fb-button {
+        position: absolute !important;
+        left: 15px !important;
+        bottom: -153px !important;
+        top: auto !important;
+        z-index: 99999 !important;
+    }
+
+    .kitchen-fb-button img {
+        width: 150px !important;
+        height: auto !important;
+    }
+}
