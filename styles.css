@@ -3620,7 +3620,7 @@ body, body * {
 }
 
 body.home main {
-    padding-top: 160px;
+    padding-top: 0px;
 }
 
 /* =========================================================
