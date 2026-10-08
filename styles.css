@@ -73,7 +73,7 @@ main {
     justify-content: center; /* centered nav */
     padding: 10px 0;
     background-color: #1a1a1a;
-    border-bottom: 1px solid #ddd;
+    border-bottom: none;
 }
 
 .nav-spacer {
