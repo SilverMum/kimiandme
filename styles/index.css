@@ -547,3 +547,126 @@
 .home .site-footer {
     margin-top: 0;
 }
+
+.footer {
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        #001428 0%,
+        #00264f 40%,
+        #003768 60%,
+        #001428 100%
+    );
+
+    color: white;
+    margin-top: 0;
+}
+
+/* Maple leaf overlay */
+.footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: url("images/maple-leaf.png") center center no-repeat;
+    background-size: 280px;
+
+    opacity: 0.06;
+
+    pointer-events: none;
+    z-index: 1;
+}
+
+.footer-container {
+    position: relative;
+    z-index: 2;
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding: 65px 50px;
+
+    display: grid;
+    grid-template-columns: 1.6fr 1.15fr 1fr 1.15fr;
+    gap: 50px;
+}
+
+.footer-column:not(:last-child) {
+    border-right: 1px solid rgba(255,255,255,0.15);
+    padding-right: 50px;
+}
+
+.footer-column h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #ffffff;
+
+    margin-bottom: 25px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 12px;
+}
+
+.footer-column p,
+.footer-column li,
+.footer-column a,
+.footer-item span {
+    color: rgba(255,255,255,0.92);
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+.footer-column a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #d5a021;
+    padding-left: 4px;
+}
+
+.footer-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 24px;
+}
+
+.footer-item i {
+    font-size: 22px;
+    color: #ffffff;
+    margin-top: 4px;
+    min-width: 24px;
+}
+
+.footer-bottom {
+    position: relative;
+    z-index: 2;
+
+    background: rgba(0,0,0,0.35);
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+
+    text-align: center;
+
+    padding: 16px 0;
+
+    margin: 0;
+
+    font-size: 1rem;
+
+    color: rgba(255,255,255,0.9);
+}
